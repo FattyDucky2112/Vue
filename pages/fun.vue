@@ -1,5 +1,7 @@
 <template>
     <div>
+    
+
         <div :class="colorChange" class="container">
             <p :class="colorChange">This is the place to experiment with vue</p>
         </div>
@@ -51,6 +53,7 @@ export default {
         text-align: center;
         left: 50%;
         border: 2px solid black;
+        border-radius: 40px;
     }
 
     .colorchangeClass{

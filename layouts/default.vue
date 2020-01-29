@@ -4,15 +4,16 @@
       <li><nuxt-link to="/home">Home</nuxt-link></li>
       <li><nuxt-link to="/admin">Admin</nuxt-link></li>
       <li><nuxt-link to="/fun">Fun</nuxt-link></li>
+      <li><nuxt-link to="/pricing">Pricing</nuxt-link></li>
     </ul>
     <nuxt />
   </div>
 </template>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One&display=swap');
+html, body {
+  font-family: 'Sigmar One', cursive;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -32,6 +33,7 @@ html {
 }
 
 .navlist li{
+  font-family: 'Sigmar One', cursive;
   float: left;
   background-color: #82ecd4;
   height: 100%;
