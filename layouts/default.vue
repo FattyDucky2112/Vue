@@ -3,6 +3,7 @@
     <ul class="navlist">
       <li><nuxt-link to="/">Eintrag 1</nuxt-link></li>
       <li><nuxt-link to="/admin">Admin</nuxt-link></li>
+      <li><nuxt-link to="/fun">Fun</nuxt-link></li>
     </ul>
     <nuxt />
   </div>
