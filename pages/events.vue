@@ -4,7 +4,7 @@
         <div class="grid-container">
             <ul v-for="item in items" class="grid-item">
                 <li><img src="~assets/party.png" alt="Picture"></li>
-                <li>{{item.event}}</li>
+                <li>{{item}}</li>
             </ul>
 
             <!-- <ul class="grid-item">
@@ -61,16 +61,20 @@ export default {
 
         data(){
             return{
-               items:[
-                   {event:"Parteyyy1"},
-                   {event:"Parteyyy2"},
-                   {event:"Parteyyy3"},
-                   {event:"Parteyyy4"},
-                   {event:"Parteyyy5"},
-               ]
-            }
+                    items: ["Party1","Party2","Party3","Party4","Party5","Party6"]
+                    
+                // var: vegetable = class whatever { 
+                //     constructor(name, link){
+                //         this.name = name;
+                //         this.link = link;
+                //     }
+                
+                //  },
+                // var: cabbage = new vegetable('cabbage', 'link'),
 
-            
+                // items:[cabbage]       
+              
+            }    
         }
 }
 </script>
