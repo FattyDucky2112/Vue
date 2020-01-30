@@ -11,6 +11,28 @@
                 Element 3 <br> Price: {{price}}
             </div>
         </div>
+
+        <ul class="uloverall">
+            <li class="lioverall">
+                <ul>
+                    <li> Element 1</li>
+                    <li> Price</li>
+                </ul>
+            </li>
+            <li class="lioverall">
+                <ul>
+                    <li> Element 2</li>
+                    <li> Price</li>
+                </ul>
+            </li>
+            <li class="lioverall">
+                <ul>
+                    <li> Element 3</li>
+                    <li> Price</li>
+                </ul>
+            </li>
+        </ul>
+
     </div>
 </template>
 
@@ -32,9 +54,8 @@ export default {
     .pricecards{
         background-color: rgba(115, 121, 119, 0.144);
         text-align: center;
-        height: 1000px;
+        height: 800px;
         float: left;
-        position: relative;
         width: 100%;
         
         
@@ -57,12 +78,41 @@ export default {
       .pricecards div:hover{
         opacity: 1;
         width: 350px;
-        height: 600px;
-        
-        
+        height: 600px;   
     }
+
     .endfloat{
         float: none;
     }
 
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .uloverall{
+        position: absolute;
+        top: 900px;
+        left: 25%;
+
+        
+    }
+
+    .lioverall{
+        float: left;
+        text-align: center;
+        background-color: #82ecd4;
+        width: 300px;
+        height: 500px;
+        font-size: 200%;
+        transition-duration: 1s;
+        
+    }
+
+    .lioverall:hover{
+        opacity: 1;
+        width: 350px;
+        height: 600px;   
+    }
 </style>

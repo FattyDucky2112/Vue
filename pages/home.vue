@@ -44,6 +44,9 @@
 </script>
 
 <style scoped>
+    p{
+        margin: 0;
+    }
     .container{
         margin: 20px auto;
         width: 50%;
@@ -70,13 +73,13 @@
     
     .backgroundtext{
         text-align: center;
-        position: absolute;
-        top: 30%;
+        position: relative;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         font-size: 10rem;
-        
+        margin: 0;
     }
 
   

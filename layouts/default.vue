@@ -5,6 +5,7 @@
       <li><nuxt-link to="/admin">Admin</nuxt-link></li>
       <li><nuxt-link to="/fun">Fun</nuxt-link></li>
       <li><nuxt-link to="/pricing">Pricing</nuxt-link></li>
+      <li><nuxt-link to="/events">Events</nuxt-link></li>
     </ul>
     <nuxt />
   </div>
