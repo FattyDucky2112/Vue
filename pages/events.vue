@@ -1,10 +1,15 @@
 <template>
     <div>
+            
         <p>{{event}}</p>
+
+
         <div class="grid-container">
-            <ul v-for="item in items" class="grid-item">
+
+            <ul v-for="(item, i) of partyItems" class="grid-item" :key="i">
                 <li><img src="~assets/party.png" alt="Picture"></li>
-                <li>{{item}}</li>
+                <li>{{item.name}}</li>
+                <li @click="setPartyName(i, 'Super neuer party name')">Namen ändern</li>
             </ul>
 
             <!-- <ul class="grid-item">
@@ -57,12 +62,20 @@
 </style>
 
 <script>
+
 export default {
 
         data(){
             return{
-                    items: ["Party1","Party2","Party3","Party4","Party5","Party6"]
-                    
+                    items: ["Party1","Party2","Party3","Party4","Party5","Party6"],
+
+                    partyItems: [
+                        {date: '22:22 01-01-1991', name: 'Super Party'},
+                        {date: '22:22 01-01-1991', name: 'Super Party 2'},
+                        {date: '22:22 01-01-1991', name: 'Super Party 3'},
+                    ],
+
+
                 // var: vegetable = class whatever { 
                 //     constructor(name, link){
                 //         this.name = name;
@@ -75,6 +88,36 @@ export default {
                 // items:[cabbage]       
               
             }    
+        },
+        computed: {
+
+            getPageTitle() {
+
+                return `Guck dir meine Tollen ${this.partyItems.length} Parties an`
+
+            }
+
+
+        },
+        methods: {
+
+
+            setPartyName(index, name) {
+
+                if (!this.partyItems[index]) {
+                    console.error('kjnfsd')
+                    return
+                }
+
+                this.partyItems[index].name = name
+
+
+            }
+
+        },
+
+        mounted() {
+            console.log(this.items)
         }
 }
 </script>
